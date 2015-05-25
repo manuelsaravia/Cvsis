@@ -58,7 +58,7 @@
                     <div class="col-xs-6 col-sm-4">
                         <div class="well well-sm" align="right">
                             <% out.print(session.getAttribute("nombre") + " " + session.getAttribute("apellido"));%>
-                            <a href="../usuario/iniciarSesion.jsp">  (Cerrar sesión)</a>
+                            <a href="../../../usuario/iniciarSesion.jsp">  (Cerrar sesión)</a>
                         </div>
                             
                     </div>
