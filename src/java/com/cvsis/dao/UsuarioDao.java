@@ -17,7 +17,7 @@ public class UsuarioDao {
 
     public boolean registrarUsuario(Usuario u, Docente d) {
        try{
-           String sql = "SELECT * FROM usuario WHERE correo = '"+u.getCorreo()+"';";
+            String sql = "SELECT * FROM usuario WHERE correo = '"+u.getCorreo()+"';";
             ConexionMysql.conectar();
             ArrayList con = ConexionMysql.getConsultaSQL(sql);
             boolean doc,user;
@@ -40,6 +40,20 @@ public class UsuarioDao {
            return false;
        }
         return false;
+    }
+
+    public String validarSesion(Usuario u) {
+        try{
+            String sql = "SELECT d.idDocente, d.nombre, d.apellido FROM docente d, usuario u WHERE u.codDocente = d.idDocente AND u.correo = '"+u.getCorreo()+"' AND u.contrasenia = '"+u.getContrasenia()+"';";
+            ConexionMysql.conectar();
+            ArrayList datos = ConexionMysql.getConsultaSQL(sql);
+            String [] d = datos.get(0).toString().split("-");
+            String cad = d[0] +"-"+ d[1] +"-"+ d[2];
+            ConexionMysql.desconectar();
+            return cad;
+        }catch(Exception e){
+            return "error";
+        }
     }
     
 }

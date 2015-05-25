@@ -37,7 +37,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="contenido">
                         <figure>
-                            <img alt="CURSOFT" class="img-responsive" id="banner_cursoft" src="../../img/banne_cursoft.png">
+                            <img alt="CVSIS" class="img-responsive" id="banner_cursoft" src="../../img/banne_cursoft.png">
                         </figure>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                 <div class="row">
                     <div class="col-xs-offset-2 col-xs-8 panel panel-default">
                         <div id="formulario">
-                            <form action="../docente/principal.jsp" class="form-horizontal" method="post" role="form">
+                            <form action="validarSesion.jsp" class="form-horizontal" method="post" role="form">
                                 <div class="form-group">
                                     <label for="tipo">Tipo de usuario:</label>
                                     <select class="form-control" id="tipo" name = "tipo">
@@ -77,14 +77,14 @@
                                     <label for="correo">Correo electrónico:</label>
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                                        <input class="form-control" id="correo" name = "correo" placeholder="Ingresa tu correo electrónico" type="text" required="">
+                                        <input class="form-control" id="correo" name = "correo" placeholder="Ingresa tu correo electrónico" type="text" required>
                                     </div>
                                 </div>
                                 <div class="[CLASS_CONTRASENIA]">
-                                    <label for="contraseña">Contraseña:</label>
+                                    <label for="contrasenia">Contraseña:</label>
                                     <div class="input-group">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                                        <input class="form-control" id="contraseña" name = "contrasenia" placeholder="Ingresa tu contraseña" type="password" required="">
+                                        <input class="form-control" id="contrasenia" name = "contrasenia" placeholder="Ingresa tu contraseña" type="password" required>
                                     </div>
                                     <div id="recordar">
                                         <p><a href="#">¿Olvidaste tu contraseña?</a></p>

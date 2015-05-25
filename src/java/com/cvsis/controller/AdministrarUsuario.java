@@ -18,5 +18,10 @@ public class AdministrarUsuario {
         UsuarioDao ud = new UsuarioDao();
         return ud.registrarUsuario(u,d);
     }
+
+    public String validarSesion(Usuario u) {
+       UsuarioDao ud = new UsuarioDao();
+       return ud.validarSesion(u);
+    }
     
 }

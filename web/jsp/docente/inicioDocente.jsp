@@ -117,8 +117,11 @@
                                         <li class="active">Home</li>
                                         
                                     </ol>
+                                    
                                     <div class="panel panel-default">
                                         <div class="panel-body">
+                                            <div align="center"><h1>Bienvenido</h1></div>
+                                            <br>
                                             <figure>
                                                 <div align="center">
                                                 <img alt="CVSIS" class="img-responsive" src="../../img/cvsis2.png">

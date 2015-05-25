@@ -18,4 +18,9 @@ public class Facade {
         AdministrarUsuario au = new AdministrarUsuario();
         return au.registrarUsuario(u,d);
     }
+    
+    public String validarSesion(Usuario u){
+        AdministrarUsuario au = new AdministrarUsuario();
+        return au.validarSesion(u);
+    }
 }
