@@ -48,7 +48,7 @@
         
         boolean b = facade.registrarUsuario(usuario, docente);
         
-        //Revisar cuando se hace un registro. revisar conexion.
+        //Revisar cuando se hace un registro. revisar conexion. 
         if(b){
             session.setAttribute("Mensaje", "<div class=\"alert alert-success\" role=\"alert\">Registro Exitoso</div>");
             response.sendRedirect("iniciarSesion.jsp");
