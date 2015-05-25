@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : leerRegistro
     Created on : 19/05/2015, 08:11:00 PM
     Author     : Manuel
@@ -48,6 +48,7 @@
         
         boolean b = facade.registrarUsuario(usuario, docente);
         
+        //Revisar cuando se hace un registro. revisar conexion.
         if(b){
             session.setAttribute("Mensaje", "<div class=\"alert alert-success\" role=\"alert\">Registro Exitoso</div>");
             response.sendRedirect("iniciarSesion.jsp");
