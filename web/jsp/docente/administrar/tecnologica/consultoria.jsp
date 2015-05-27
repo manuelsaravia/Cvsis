@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>consultoria-asesoria</h1>
+        <h1>consultoria-asesoria academica</h1>
     </body>
 </html>
