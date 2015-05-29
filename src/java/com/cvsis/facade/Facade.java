@@ -28,4 +28,9 @@ public class Facade {
         AdministrarDocente ad = new AdministrarDocente();
         return ad.registrarMateria(m,d);
     }
+      public boolean agregarProyecto(String codigoDocente,String codigoP,String nombreP,String actaInst,String institucionFinanciera,String tipoProyecto,String fechaInici,String fechaFin){
+        AdministrarProyecto ap=new AdministrarProyecto();
+        return ap.registrarProyecto(codigoDocente, codigoP, nombreP, actaInst, institucionFinanciera, tipoProyecto, fechaInici, fechaFin);
+   }
+      
 }
