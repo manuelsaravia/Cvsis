@@ -65,6 +65,15 @@
                 </div>
             
                             <div class="row">
+                                <br>
+                <%
+                    if (session.getAttribute("Mensaje") == null) {
+                        session.setAttribute("Mensaje", "");
+                    }
+                    out.print(session.getAttribute("Mensaje"));
+                    session.setAttribute("MensajeRecuperar", "");
+                    session.setAttribute("Mensaje", "");
+                %>
                                 <div class="col-md-3" id="menu">
                                     
                             
@@ -137,12 +146,13 @@
                                                                                            <tr>
                                                                                                <th>Codigo Curso</th> 
                                                                                                <th>Nombre Asignatura</th>
+                                                                                               <th>Semestre</th>
                                                                                                <th></th>
                                                                                                <th></th>
                                                                                            </tr>
                                                                                        </thead>
                                                                                        <tbody class="tablas">
-                                                                                           
+                                                                                           <% out.println(session.getAttribute("tablaMaterias").toString()); %>
                                                                                            <tr>
                                                                                                <td>
                                                                                                    <div class="row">
@@ -155,6 +165,13 @@
                                                                                                    <div class="row">
                                                                                                    <div class="col-md-12">
                                                                                                        <input class="form-control" id="nombreCurso" name="nombreCurso" placeholder="Ingenieria del Software" type="text" required>
+                                                                                                   </div>
+                                                                                                   </div>
+                                                                                               </td>
+                                                                                               <td>
+                                                                                                   <div class="row">
+                                                                                                   <div class="col-md-12">
+                                                                                                       <input class="form-control" id="semestre" name="semestre" placeholder="1/2015" type="text" required>
                                                                                                    </div>
                                                                                                    </div>
                                                                                                </td>

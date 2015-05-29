@@ -25,6 +25,11 @@
             session.setAttribute("nombre", nom);
             session.setAttribute("apellido", apell);
             
+            //Creacion de Sesiones que se necesitaran a lo largo de la ejecucion
+            session.setAttribute("tablaMaterias", "");
+            //Fin de sesiones
+            
+            
             response.sendRedirect("../docente/inicioDocente.jsp");
         }
         else{

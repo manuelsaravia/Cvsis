@@ -23,4 +23,9 @@ public class Facade {
         AdministrarUsuario au = new AdministrarUsuario();
         return au.validarSesion(u);
     }
+    
+    public String registrarMateria(Materia m, Docente d){
+        AdministrarDocente ad = new AdministrarDocente();
+        return ad.registrarMateria(m,d);
+    }
 }
