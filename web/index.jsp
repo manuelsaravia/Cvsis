@@ -5,6 +5,6 @@
 --%>
 
 <% 
-    //prueba de push 5
+    //prueba de push 5 probando
   response.sendRedirect("jsp/usuario/iniciarSesion.jsp");
 %>
